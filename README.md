@@ -144,6 +144,8 @@ pytest -m eegnet            # only with torch and braindecode installed
 
 ## Notes
 
+- The code is a copy of the study's internal repository at commit `3709def` (2026-11-20); that
+  repository and its history are not public.
 - Comments in the code refer to sections of the study's internal design document ("guide
   section 13.8" etc.); the same content is in the Methods of the paper, and section 14 is the
   pre-registration in `preregistration/`.

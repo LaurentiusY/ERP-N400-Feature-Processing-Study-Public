@@ -1,4 +1,5 @@
-"""Figures 1-7 of the manuscript (paper/NeuroImage/figures/); 1 and 3-7 from the local results folder.
+"""Figures 1-7 of the manuscript (paper/NeuroImage/figures/); 1 and 3-7 from the local results
+folder.
 
 Colours: the three tasks take the first three slots of the validated categorical palette
 (all-pairs CVD-safe on white); joint estimates and the replication sample use neutral ink.
@@ -220,11 +221,11 @@ def feature_paths(ax: plt.Axes) -> None:
     n400 = Rectangle((trial[0] + 0.5 * trial[2], trial[1] - 0.3), 0.2 * trial[2], trial[3] + 0.6,
                      fc=GRID, lw=0)  # fmt: skip
     ax.add_patch(n400)
-    ax.plot([trial[0] + 0.2 * trial[2]] * 2, [trial[1] - 0.3, trial[1] + trial[3] + 0.3], color=MUTED,
-            lw=0.6, ls=":")  # fmt: skip
+    ax.plot([trial[0] + 0.2 * trial[2]] * 2, [trial[1] - 0.3, trial[1] + trial[3] + 0.3],
+            color=MUTED, lw=0.6, ls=":")  # fmt: skip
     trace(ax, t, x, trial, (-10, 8), color=INK, lw=0.6)
-    ax.text(trial[0] + trial[2] / 2, trial[1] + trial[3] + 1.4, "One trial, one channel", fontsize=7,
-            color=INK, ha="center")  # fmt: skip
+    ax.text(trial[0] + trial[2] / 2, trial[1] + trial[3] + 1.4, "One trial, one channel",
+            fontsize=7, color=INK, ha="center")  # fmt: skip
     ax.text(trial[0] + 0.6 * trial[2], trial[1] - 0.8, "N400", fontsize=7, color=INK2, ha="center",
             va="top")  # fmt: skip
     ax.text(trial[0] + 0.2 * trial[2], trial[1] - 0.8, "0 s", fontsize=7, color=INK2, ha="center",
@@ -252,9 +253,12 @@ def feature_paths(ax: plt.Axes) -> None:
 
     arrow(ax, (86.0, wave[1] + wave[3] / 2), (88.5, 21.0))
     arrow(ax, (86.6, power[1] + power[3] / 2), (88.5, 15.0))
-    box(ax, (88.7, 12.5, 11.3, 11.5), "Classifier", "fits or not?\nsingle trials,\nwithin each\nparticipant")
-    note = ("Each representation crossed with\n4 time windows × 4 normalizations\n"
-            "× 5 channel sets = 640 configurations")
+    box(ax, (88.7, 12.5, 11.3, 11.5), "Classifier",
+        "fits or not?\nsingle trials,\nwithin each\nparticipant")  # fmt: skip
+    note = (
+        "Each representation crossed with\n4 time windows × 4 normalizations\n"
+        "× 5 channel sets = 640 configurations"
+    )
     ax.text(40.5, 10.0, note, fontsize=7, color=INK2, va="top", linespacing=1.3)
 
 
