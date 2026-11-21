@@ -1,0 +1,27 @@
+# data and intermediate files
+data/
+derivatives/
+logs/
+*.fif
+*.set
+*.fdt
+
+# figures and tables written by scripts/paper_figures.py and scripts/paper_supplement.py
+paper/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
